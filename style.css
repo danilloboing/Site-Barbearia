@@ -1,0 +1,283 @@
+body { 
+	background: #222222;
+	font-family: 'Montserrat', sans-serif;
+}
+/*Header*/
+header {
+	background-image: url(img/bg.jpg);
+}
+.box {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.logo {
+	width: 180px;
+	text-align: center;
+}
+.logo:hover{
+	opacity: 0.9;
+}
+#decoration-01 {
+	width: 167px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 32px 0;
+
+}
+#decoration-02 {
+	width: 167px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 32px 0;
+}
+nav {
+	padding-bottom: 1em;
+	width: 90%;
+	margin: 0 auto;
+}
+nav li {
+	display: inline;
+	padding-left: 0.8em;
+	text-align: center;
+}
+nav a {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+nav a:hover {
+	border-bottom: 2px solid #8B0000;
+}
+/*Main*/
+.banner {
+	width: 100%;
+} 
+.background-color {
+	background: #222222;
+}
+main {
+	color: white;
+	width: 90%;
+	margin: 0 auto;
+}
+.titulo-principal {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0 0 1em;
+	clear: left;
+	padding-top: 1em;
+	color: orange;
+}
+.principal p {
+	margin: 0 0 2em;
+	font-size: 13px;
+
+}
+.principal strong {
+	font-weight: bold;
+}
+.principal em {
+	font-style: italic;
+}
+.utensilios {
+	width: 80px;
+	float: left;
+	margin: 0 15px 10px 0px;
+}
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+	font-size: 13px;
+}
+.beneficios {
+	margin: 2em 0 0;
+	width: 100%;
+}
+
+.lista-beneficios {
+	font-style: italic;
+	line-height: 1.7em;
+	vertical-align: top;
+	font-size: 13px;
+	
+
+}
+.conteudo-beneficios li:before {
+	content: "🪒 ";
+}
+.imagembeneficios {
+	box-shadow: 10px 10px 30px 0px #000000;
+	width: 100%;
+	margin: 1em 0;
+
+}
+.imagembeneficios:hover {
+	opacity: 0.5;
+}
+
+.video {
+	margin: 1em auto;
+	height: 200px;
+}
+/*Footer*/
+footer {
+	text-align: center;
+	background: url(img/bg.jpg);
+	padding: 10px 0 20px;
+}
+.copyright {
+	color: #FFFFFF;
+	font-size: 8px;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+
+	/* Luizinho */
+	.logo {
+		width: 120px;
+	}
+	nav ul {
+		padding: 0;
+	}
+
+	.copyright {
+		font-size: 12px;
+	}
+
+	#decoration-01,
+	#decoration-02 {
+		visibility: hidden;
+	}
+
+}
+
+@media screen and (min-width: 501px) {
+
+	.logo {
+		width: 120px;
+	}
+	#decoration-01 {
+		width: 100px;
+		padding: 36px 0;
+		float: left;
+	}
+	#decoration-02 {
+		width: 100px;
+		padding: 36px 0;
+		float: right;
+	}
+	nav a {
+		font-size: 1em;
+	}
+	.video {
+		width: 400px;
+		height: 300px;
+	}
+}
+
+@media screen and (min-width: 650px) {
+
+	.utensilios {
+		width: 130px;
+	}
+
+	.conteudo-beneficios{
+		display: flex;
+	}
+	.lista-beneficios {
+		width: 40%;
+	}
+	.imagembeneficios {
+		width: 60%;
+		margin: 0 0 1em;
+	}
+	.titulo-principal{
+		font-size: 2em;
+	}
+
+	main {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 819px) {
+
+	.principal p, .mapa p {
+		font-size: 1.3em;
+	}
+	.lista-beneficios {
+		font-size: 1em;
+	}
+	.imagembeneficios {
+		margin-bottom: 3em;
+	}
+	.video {
+		width: 450px;
+		height: 400px;
+	}
+	.copyright {
+		font-size: 13px;
+	}
+}
+
+@media screen and (min-width: 911px) {
+
+	.logo {
+		width: 167px;
+		padding-bottom: 0.5em;
+	}
+	nav {
+		padding-bottom: 1.5em;
+	}
+	nav li{
+		margin-bottom: 2em;
+	}
+	nav a {
+		font-size: 20px;
+	}
+	.titulo-principal {
+		padding: 2em 0 1em 0;
+	}
+	#decoration-01 {
+		width: 140px;
+		padding: 52px 0;
+		float: left;
+	}
+	#decoration-02 {
+		width: 140px;
+		padding: 52px 0;
+		float: right;
+	}
+	.beneficios {
+		width: 100%;
+	}
+	.conteudo-beneficios{
+		width: 100%;
+	}
+	.lista-beneficios {
+		margin: 0;
+	}
+	.lista-beneficios li {
+		margin: 0;
+	}
+	.video {
+		width: 50%;
+		height: 400px;
+
+	}
+}
+
+@media screen and (min-width: 1280px) {
+
+	.lista-beneficios {
+		font-size: 20px;
+	}
+}

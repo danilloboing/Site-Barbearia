@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>teste</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="teste.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<script>
+		var array = [];
+		function adicionar(valor){
+			array.push(valor);
+			console.log(valor);
+			console.log(array);
+		}
+	</script>
+	</head>
+
+    <body>
+        <form name='frm'>
+        <input type='text' name='dado'>
+        <input type='button' onclick='javascript:adicionar(document.frm.dado.value);' value='inserir'/>
+        </form>
+    </body>
+</html>
